@@ -15,6 +15,18 @@ int main() {
   }
   printf("\n");
  }
+ printf("======================Sub==================\n");
+ printf("\n");
+ int* C2;
+ C2 = Sub((int*)A, (int*)B);
+ int i2, j2;
+ for (i2 = 0; i2 < SIZE; i2++) {
+  for (j2 = 0; j2 < SIZE; j2++) {
+   // 使用展平索引來存取 C1 中的元素
+   printf("%d ", C2[i2 * SIZE + j2]);
+  }
+  printf("\n");
+ }
 
  printf("======================E_Mul==================\n");
  printf("\n");
