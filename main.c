@@ -27,6 +27,20 @@ int main() {
   }
   printf("\n");
  }
+
+ printf("======================E_Mul==================\n");
+ printf("\n");
+ int* C3;
+ C3 = E_Mul((int*)A, (int*)B);
+ int i3, j3;
+ for (i3 = 0; i3 < SIZE; i3++) {
+  for (j3 = 0; j3 < SIZE; j3++) {
+   printf("%d ", C3[i3 * SIZE + j3]);
+  }
+  printf("\n");
+ }
+ 
+ 
  return 0;
 }
 
